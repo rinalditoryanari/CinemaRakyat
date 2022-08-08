@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Cinema Rakyat</title>
+        <link rel="stylesheet" href="css/style1.css"></link>
+        <h:outputStylesheet library="css" name="home.css" />
+        <link rel="stylesheet" 
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
+    </h:head>
+    <h:body style="background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(image/Theater1.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;">
+        
+        <div class="container">
+                <img src="image/lambang.png" style="height: 100px"></img>
+		<a href="home.xhtml" style="text-decoration: none; color: white; margin-left: 450px">Now Playing</a>
+		<a href="book.xhtml" style="text-decoration: none; color: white; margin-left:65px">Book</a>
+                <a href="cekjadwal.xhtml" style="text-decoration: none; color: white; margin-left:65px">Cek Jadwal</a>
+                <a href="login.xhtml" class="header-btn" style="margin-top: 30px">Log In</a>
+	</div>
+        <div class="container movie-detail">
+            <ui:insert name="body"/>
+        </div>
+    </h:body>
+</html>
+

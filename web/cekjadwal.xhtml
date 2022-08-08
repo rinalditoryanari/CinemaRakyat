@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Cinema Rakyat</title>
+        <link rel="stylesheet" href="css/style1.css"></link>
+        <h:outputStylesheet library="css" name="popup.css"/>
+	<link href="http://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Alice:400,700" rel="stylesheet" type="text/css" />
+        <h:outputStylesheet library="css" name="home.css" />
+        <h:outputStylesheet library="css" name="book.css" />        
+        <link rel="stylesheet" 
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
+    </h:head>
+    <h:body>
+        <ui:decorate template="templatedasar.xhtml">
+            <ui:define name="body">
+        <div class="container movie-detail">
+                <div class="section-center">
+                    <div class="booking-form" >
+                        <div class="booking-bg" >
+                            <div class="form-header " >
+                                <h2>Cek Jadwal</h2>
+                                <p>Disini anda bisa mencari jam tayang film</p>
+
+                            </div>
+                        </div>
+                            <h:form prependId=" false">
+                                <table>
+                                    <tr>
+                                        <td width="40%">
+                                            <h:outputLabel class="form-label">Film</h:outputLabel>
+                                        </td>
+                                        <td width="5%"></td>
+                                        <td width="60%">                                            
+                                        <b:selectOneMenu value="#{tblFilm.idFilm}">
+                                            <f:selectItem itemValue="1" itemLabel="Avenger: Endgame"/>
+                                            <f:selectItem itemValue="2" itemLabel="Snowpiercer"/>
+                                            <f:selectItem itemValue="3" itemLabel="Frozen II"/>
+                                            <f:selectItem itemValue="4" itemLabel="Joker"/>
+                                            <f:selectItem itemValue="5" itemLabel="The Fate of The Furious"/>
+                                            <f:selectItem itemValue="6" itemLabel="Captain Marvel"/>
+                                        </b:selectOneMenu>  
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <center>
+                                                <b:commandButton class="submit-btn" value="Cari Film"
+                                                                  action="#{tblFilm.cariFilm()}" />
+                                            </center>
+                                            <br/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><h:outputLabel class="form-label">Jam Tayang</h:outputLabel></td>
+                                        <td></td>
+                                        <td><b:inputText class="form-control" value="#{tblFilm.jamTayang}" disabled="true"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h:outputLabel class="form-label">Room</h:outputLabel></td>
+                                        <td></td>
+                                        <td><b:inputText class="form-control" value="#{tblFilm.room}" disabled="true"/></td>
+                                    </tr>
+                                </table>
+                                <br/>
+                            </h:form>
+                    </div>
+		</div>
+        </div>
+            </ui:define>
+        </ui:decorate>
+    </h:body>
+</html>
+

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Cinema Rakyat</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/style1.css"></link>
+        <h:outputStylesheet library="css" name="home.css" />
+        
+        <link rel="stylesheet" 
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
+    </h:head>
+    <h:body>
+        <ui:decorate template="templatedasar.xhtml">
+            <ui:define name="body">
+                <div class="container movie-details">
+                <div class="row">
+                <div class="col-md-6 left-box">
+                    <h1><ui:insert name="judul"/></h1>
+                    <p><ui:insert name="deskripsi"/></p>
+                    <p>Director: <ui:insert name="director"/></p>
+                    <p>Rating: <ui:insert name="rating"/></p>
+                    <p>Duration: <ui:insert name="durasi"/></p>
+                    <p>Cast:</p>
+                    <div class="casting">
+                        <ui:insert name="cast"/>
+                    </div>
+                    <div class="book" style="margin-right:310px; margin-top:10px;">
+                        <a href="book.xhtml" style="width: 116px">Book Now</a>                      
+                    </div>
+		</div>
+                <div class="col-md-6 text-right">
+                    <ui:insert name="cover"/>
+                </div>
+                </div>
+                </div>
+                <div class="container series" style="margin-bottom: 30px">
+                    <br/>
+                    <h3>Now Playing . . .</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-6"><ui:insert name="movie-1"/></div>
+                                <div class="col-6"><ui:insert name="movie-2"/></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-6"><ui:insert name="movie-3"/></div>
+                                <div class="col-6"><ui:insert name="movie-4"/></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-6"><ui:insert name="movie-5"/></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ui:define>
+        </ui:decorate>
+    </h:body>
+</html>
+

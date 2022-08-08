@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Cinema Rakyat</title>
+        <link rel="stylesheet" href="css/style1.css"></link>
+        <h:outputStylesheet library="css" name="home.css" />
+        <link rel="stylesheet" 
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
+    </h:head>
+    <h:body>
+        <ui:decorate template="template_movie.xhtml">
+            <ui:define name="judul">Joker</ui:define>
+            <ui:define name="deskripsi">In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.</ui:define>
+            <ui:insert name="director">Todd Phillips</ui:insert>
+            <ui:define name="rating">PG-13</ui:define>
+            <ui:define name="durasi">122 minutes</ui:define>
+            <ui:define name="cast">
+                <img src="image/Joker-joaqui.jpg" title="Joaquin Phoenix"/>
+                <img src="image/Joker-rober.jpg" title="Robert De Nico" style="margin-left: 10px;"/>
+                <img src="image/Joker-zazi.jpg" title="Zazie Beetz" style="margin-left: 10px;"/>
+                <img src="image/Joker-france.jpg" title="Frances Conroy" style="margin-left: 10px;"/>
+                <img src="image/Joker-bret.jpg" title="Brett Cullen" style="margin-left: 10px;"/>
+            </ui:define>
+            <ui:define name="link-pesan">
+                <a href="#">Book Now</a>                        
+            </ui:define>
+            <ui:define name="cover">
+                <img src="image/m3.jpg" class="movie-img"/>
+            </ui:define>
+            <ui:define name="movie-1">
+                <a href="endgame.xhtml">
+                    <img src="image/m6.jpg" title="Avengers: Endgame"/></a>
+            </ui:define>
+            <ui:define name="movie-2">
+                <a href="showpiercer.xhtml">
+                    <img src="image/m1.jpg" title="Snowpiercer"/></a>
+            </ui:define>
+            <ui:define name="movie-3">
+                <a href="frozen.xhtml">
+                    <img src="image/m2.jpg" title="Frozen"/></a>
+            </ui:define>
+            <ui:define name="movie-4">
+                <a href="thefateofthefurious.xhtml">
+                    <img src="image/m4.jpg" title="The Fate of The Furious"/></a>
+            </ui:define>
+            <ui:define name="movie-5">
+                <a href="Captain_Marvel.xhtml">
+                    <img src="image/m5.jpg" title="Captain Marvel"/></a>            
+            </ui:define>
+        </ui:decorate>
+    </h:body>
+</html>
+

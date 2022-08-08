@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 20, 2020 3:05:06 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.TblTiket" table="tbl_tiket" catalog="cinema_rakyat" optimistic-lock="version">
+        <id name="idTiket" type="java.lang.Integer">
+            <column name="id_tiket" />
+            <generator class="identity" />
+        </id>
+        <property name="idFilm" type="int">
+            <column name="id_film" not-null="true" />
+        </property>
+        <property name="idPelanggan" type="int">
+            <column name="id_pelanggan" not-null="true" />
+        </property>
+        <property name="waktuTrx" type="time">
+            <column name="waktu_trx" length="8" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

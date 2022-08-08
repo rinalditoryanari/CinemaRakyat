@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Cinema Rakyat</title>
+        <link rel="stylesheet" href="css/style1.css"></link>
+        <h:outputStylesheet library="css" name="home.css" />
+        
+        <link rel="stylesheet" 
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
+    </h:head>
+    <h:body>
+        <ui:decorate template="templatedasar.xhtml">
+            <ui:define name="body">
+                <div class="container movie-details">
+                    <div class="row">
+                        <div class="col-md-6" style="margin-left: 400px;"> 
+                            <h1 style="color: white;">Movie Selection</h1>
+                        </div>
+                    </div>
+                    <div class="container series">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-6"><ui:insert name="nowmovie-1"/></div>
+                                    <div class="col-6"><ui:insert name="nowmovie-2"/></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-6"><ui:insert name="nowmovie-3"/></div>
+                                    <div class="col-6"><ui:insert name="nowmovie-4"/></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-6"><ui:insert name="nowmovie-5"/></div>
+                                    <div class="col-6"><ui:insert name="nowmovie-6"/></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 30px">
+                        <br/>
+                        <div class="col-md-6" style="margin-left: 425px;"> 
+                            <h1 style="color: white;">Coming Soon</h1>
+                        </div>
+                    </div>
+                    <div class="container series">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-6"><ui:insert name="comemovie-1"/></div>
+                                    <div class="col-6"><ui:insert name="comemovie-2"/></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-6"><ui:insert name="comemovie-3"/></div>
+                                    <div class="col-6"><ui:insert name="comemovie-4"/></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-6"><ui:insert name="comemovie-5"/></div>
+                                    <div class="col-6"><ui:insert name="comemovie-6"/></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 30px">
+                        <br/>
+                        <div class="col-md-6" style="margin-left: 465px;"> 
+                            <h1 style="color: white;">Fasilities</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-8" style="margin-left: 150px;">
+                                    <img src="image/Atmos.jpg" title="Dolby Atmos" style="width: 100%;height: 300pt;"></img></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-8" style="margin-right: 100px;">
+                                    <img src="image/4DX.jpg" title="IMAX" style="width: 100%;height: 300pt;"></img></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ui:define>
+        </ui:decorate>
+    </h:body>
+</html>
+

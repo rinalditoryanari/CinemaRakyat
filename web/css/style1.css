@@ -1,0 +1,75 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(image/Avenger.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.logo{
+	width : 15px;
+	margin-top: 18px;
+
+}.header{
+	height: 10%;
+}.header-btn{
+	text-decoration: none !important;
+	border-radius: 30px;
+	padding: 7px 20px;
+	float: right;
+	margin-top: 15px;
+	color: #fff !important;
+	background: #107afd;
+	font-weight: 600;
+
+}.movie-details
+{
+	margin:3% 0;
+}.left-box{
+	color: white;
+}.casting img{
+	height: 50px;
+	width: 50px;
+}.left-box .book a{
+	text-decoration: none !important;
+	border-radius: 30px;
+	padding: 7px 20px;
+	float: right;
+	margin-top: 15px;
+	color: #fff !important;
+	background: #107afd;
+	font-weight: 600;
+	display:inline-block;
+	margin-right: 10px;
+	position: left;	
+
+}.movie-img{
+	height: 350px;
+	box-shadow: -4px 4px 5px 0 #000;	
+}
+
+.series h3{
+	color: #fff;
+}
+
+.series img{
+	width: 100%;
+	height: 300px;
+	margin-top: 15px;
+	box-shadow: -4px 4px 5px 0 #000;
+	cursor: pointer;
+	transition: 1s;
+
+}
+
+.series img:hover{
+	transform: translateY(-10px);
+}
+
+.fasilitas img{
+	
+	box-shadow: -4px 4px 5px 0 #000;
+	
+}

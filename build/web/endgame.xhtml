@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Cinema Rakyat</title>
+        <link rel="stylesheet" href="css/style1.css"></link>
+        <h:outputStylesheet library="css" name="home.css" />
+        <link rel="stylesheet" 
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
+    </h:head>
+    <h:body>
+        <ui:decorate template="template_movie.xhtml">
+            <ui:define name="judul">Avenger: Endgame</ui:define>
+            <ui:define name="deskripsi">After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</ui:define>
+            <ui:insert name="director">Anthony Russo, Joe Russo</ui:insert>
+            <ui:define name="rating">PG-13</ui:define>
+            <ui:define name="durasi">182 minutes</ui:define>
+            <ui:define name="cast">
+                <img src="image/Stark.jpg" title="Robert Downey Jr."/>
+                <img src="image/Roger.jpg" title="Chris Evans" style="margin-left: 10px;"/>
+                <img src="image/Smash.jpg" title="Mark Ruffalo" style="margin-left: 10px;"/>
+                <img src="image/Thor.jpg" title="Chris Hemsworth" style="margin-left: 10px;"/>
+                <img src="image/Widow.jpg" title="Scarlet Johansson" style="margin-left: 10px;"/>
+            </ui:define>
+            <ui:define name="link-pesan">
+                <a href="#">Book Now</a>                        
+            </ui:define>
+            <ui:define name="cover">
+                <img src="image/CoverAve.jpg" class="movie-img"/>
+            </ui:define>
+            <ui:define name="movie-1">
+                <a href="showpiercer.xhtml">
+                    <img src="image/m1.jpg" title="Snowpiercer"/></a>
+            </ui:define>
+            <ui:define name="movie-2">
+                <a href="frozen.xhtml">
+                    <img src="image/m2.jpg" title="Frozen"/></a>
+            </ui:define>
+            <ui:define name="movie-3">
+                <a href="joker.xhtml">
+                    <img src="image/m3.jpg" title="Joker"/></a>
+            </ui:define>
+            <ui:define name="movie-4">
+                <a href="thefateofthefurious.xhtml">
+                    <img src="image/m4.jpg" title="The Fate of The Furious"/></a>
+            </ui:define>
+            <ui:define name="movie-5">
+                <a href="Captain_Marvel.xhtml">
+                    <img src="image/m5.jpg" title="Captain Marvel"/></a>                    
+            </ui:define>
+        </ui:decorate>
+    </h:body>
+</html>
+

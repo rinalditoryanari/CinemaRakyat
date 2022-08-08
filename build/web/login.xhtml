@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Cinema Rakyat</title>
+        <link rel="stylesheet" href="css/style1.css"></link>
+        <h:outputStylesheet library="css" name="popup.css"/>
+	<link href="http://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.googleapis.com/css?family=Alice:400,700" rel="stylesheet" type="text/css" />
+        <h:outputStylesheet library="css" name="home.css" />
+        <h:outputStylesheet library="css" name="book.css" />        
+        <link rel="stylesheet" 
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
+    </h:head>
+    <h:body>
+        <ui:decorate template="templatedasar.xhtml">
+            <ui:define name="body">
+        <div class="container movie-detail">
+                <div class="section-center">
+                    <div class="booking-form" >
+                        <div class="booking-bg" >
+                            <div class="form-header " >
+                                <h2>Login</h2>
+                                <p>Silahkan Masukkan Email dan Password Anda</p>
+                            </div>
+                        </div>
+                        <h:form style="padding-bottom: 0px">
+                            <table>
+                                <tr class="form-group">
+                                    <td style="width: 40%">
+                                        <span class="form-label">Email</span>
+                                    </td>
+                                    <td style="width: 70%">
+                                        <b:inputText class="form-control" required="true" value="#{tblPelanggan.email}"/>                               
+                                    </td>
+                                </tr>
+                                <tr class="form-group">
+                                    <td><span class="form-label">Password</span></td>
+                                    <td><b:inputSecret class="form-control" required="true" value="#{tblPelanggan.password}"/></td>
+                                </tr>
+                            </table>
+                            <div class="form-btn">
+                                <b:commandButton class="submit-btn" value="Log In" action="#{tblPelanggan.loginakun()}"/>
+                            </div>
+                        </h:form>
+                        <h:form style="padding-top: 0px ">
+                            <div class="form-btn">
+                                <b:commandButton class="submit-btn" value="Sign Up" action="#{tblPelanggan.pindahsignup()}"/>
+                            </div>
+                        </h:form>
+                    </div>
+		</div>
+        </div>
+            </ui:define>
+        </ui:decorate>
+    </h:body>
+</html>
+
